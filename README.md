@@ -1,10 +1,14 @@
 # Printex
+Printex is a Color Printer Module,helps you to print the data and strings in color format in console.                     
 
-**TODO: Add description**
+## Use
+This module separates the different console outputs with different colors and including background colors as well. It gives you the direct focus on the console by highlighting text with colors and backgrounds.                             
+
+You can use in multiple ways like printing the :error message and many formats. This helps you identify message from the regular out put of the console. You can also specify the :bg_color - Background color for the text to lay on.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+[Download from Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `printex` to your list of dependencies in `mix.exs`:
 
 ```elixir
@@ -12,8 +16,5 @@ def deps do
   [{:printex, "~> 0.1.0"}]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/printex](https://hexdocs.pm/printex).
+[Documentation](https://hexdocs.pm/printex).
 

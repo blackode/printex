@@ -5,13 +5,21 @@ defmodule Printex do
   Documentation for Printex. 
   --------------------------
   Printex is a Color Printer Module,helps you to print the data and strings in color format in console.
+  ## Use
+  This module separates the different console outputs with different colors and including background colors as well.        
+  It gives you the direct focus on the console by highlighting text with colors and backgrounds.           
+
   You can use in multiple ways like printing the :error message and many formats.
   This helps you identify message from the regular out put of the console. 
   You can also specify the :bg_color - Background color for the text to lay on.
-  For more examples and screen shots and how to usage check the [github](https://github.com/blackode/printex)
+  For more examples and screen shots and how to usage check the [github](https://github.com/blackode/printex)              
+
+  ### NOTE
+  Color may look  different in different Terminals or Consoles or whatever the :stdout       
 
   """
   @doc """
+  Prints the only binary to the console with colors specified
   This function prints the string passed in the color you specified or else it uses 
   the default format for printing i.e regular format IO.puts
 
@@ -27,7 +35,15 @@ defmodule Printex do
       iex> Printex.prints (%{string: "message",color: :red})
       This prints the message in  red color
       iex> Printex.prints ("message",:red,:white)
-      This prints the message in red color with white background
+      This prints the message in red color with white background          
+
+
+  ### Text with foreground color                   
+  ![Prints Image](../assets/images/prints.png)             
+
+  ### Text with background colors                 
+  ![Prints Image](../assets/images/prints_bg.png)
+
   """
 
   ####################################
@@ -73,13 +89,17 @@ defmodule Printex do
   ## print_error ##
   #################
 
+
   @doc """
-  Prints the given message in the error format in the red color
+
+  Prints the given message in the error format in the red color.        
 
   ## Examples
 
       iex> Printex.print_error "This is error"
 
+  ### Printing Error Text
+  ![Prints Image](../assets/images/print_error.png)          
   """
 
   def print_error(string) when is_binary(string) do 
@@ -92,12 +112,15 @@ defmodule Printex do
   #################
 
   @doc """
-  Prints the given message in the information format in the green color
+  Prints the given message in the information format in the green color.           
+
 
   ## Examples
 
       iex> Printex.print_info "This is info"
 
+  ### Printing Information Text
+  ![Prints Image](../assets/images/print_info.png)          
   """
 
   def print_info(string) when is_binary(string) do 
@@ -110,11 +133,14 @@ defmodule Printex do
   #################
 
   @doc """
-  Prints the given message in the warning format in the yellow color
+  Prints the given message in the warning format in the yellow color.       
 
   ## Examples
 
-      iex> Printex.print_warning "This is warning"
+      iex> Printex.print_warning "This is warning"            
+
+  ### Printing Info Text
+  ![Prints Image](../assets/images/print_warning.png)          
   """
   def print_warning(string) when is_binary(string) do 
     ansi_format(:yellow,string,"WARNING","warn_message")
@@ -124,7 +150,7 @@ defmodule Printex do
   @doc """
   This prints the given text in the format you specified. The string formats are 
   as follows
-  :x_on_y here {x,y} can be any 9 possible colors
+  :x_on_y here {x,y} can be any 8 possible colors
 
   1. black
   2. blue
@@ -139,12 +165,14 @@ defmodule Printex do
 
   ## Usage 
   `:black_on_white`    
-  prints the text in black color with white background.
+  prints the text in black color with white background.            
   `:red_on_light_green`          
-  prints the text in red color with light_green background.
+  prints the text in red color with light_green background.           
   `:light_blue_on_light_cyan`             
-  prints the text in light_blue color with light_cyan background.
+  prints the text in light_blue color with light_cyan background.          
 
+  ### x_on_y format colors
+  ![x_on_y image](../assets/images/x_on_y.png)
   """
   @spec color_print(binary,atom)::list
 
@@ -170,7 +198,10 @@ defmodule Printex do
   1. Using the default label format.`print("hello")`
   2. With out any label text. `print("hello",:no_label)`
   3. Passing label option as string. `print("hello","greeting")` here the text greeting is treated as :label
-  4. Passing label option as list. `print("hello",label: "greeting")`
+  3.1 Passing label option as list. `print("hello",label: "greeting")`
+
+  ### print function
+  ![print image](../assets/images/print.png)
   """
   def print(data,label \\ :default) do 
     case label do
@@ -184,7 +215,11 @@ defmodule Printex do
       :no_label ->
         IO.inspect data
       label when is_binary(label) -> 
-        IO.inspect(data,label: label)
+        IO.inspect(data,label: """ 
+                    ###############
+                    #{label}
+                    ###############
+                   """)
       label when is_list(label) -> 
         IO.inspect(data,label)
       _-> 
