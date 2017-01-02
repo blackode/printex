@@ -39,5 +39,5 @@ end
 
 ### Smart printing
 
-![color_print](assets/images/color_print.png)
+![color_print](assets/images/x_on_y.png)
 
