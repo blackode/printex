@@ -245,7 +245,7 @@ defmodule Printex do
   end
 
   defp color_check?(color) do
-   colors = [:black,:blue,:cyan,:green,:magenta,:red,:white,:yellow] 
+   colors = [:black,:blue,:cyan,:green,:magenta,:red,:white,:yellow,:light_black,:light_blue,:light_cyan,:light_green,:light_magenta,:light_red,:light_white,:light_yellow] 
    Enum.any?(colors,fn(kolor)->kolor==color end)
   end
 
