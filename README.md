@@ -16,5 +16,28 @@ def deps do
   [{:printex, "~> 0.1.0"}]
 end
 ```
-[Documentation](https://hexdocs.pm/printex).
+[Documentation](https://hexdocs.pm/printex).            
+
+## Screenshots
+### print
+![print](assets/images/print.png)
+
+### prints with foreground colors
+![prints](assets/images/prints.png)
+
+### prints with background colors
+![prints](assets/images/prints_bg.png)
+
+### Printing the Warning Text
+![print_warning](assets/images/print_warning.png)
+
+### Printing the Error Text
+![print_error](assets/images/print_error.png)
+
+### Printing the Info Text
+![print_info](assets/images/print_info.png)
+
+### Smart printing
+
+![color_print](assets/images/color_print.png)
 
