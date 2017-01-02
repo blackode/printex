@@ -1,0 +1,4 @@
+%{"dialyxir": {:hex, :dialyxir, "0.4.1", "236056d6acd25f740f336756c0f3b5dd6e2f0156074bc15f3b779aeee15390c8", [:mix], []},
+  "earmark": {:hex, :earmark, "1.0.3", "89bdbaf2aca8bbb5c97d8b3b55c5dd0cff517ecc78d417e87f1d0982e514557b", [:mix], []},
+  "ex_doc": {:git, "https://github.com/elixir-lang/ex_doc.git", "5f6005adc3eb758399d92c48ba43fc683a6a9725", []},
+  "typex": {:hex, :typex, "0.1.0", "608de876a0db31459c6524d2ba4d3af1295f8477512deca317ae18b1c3d60ce1", [:mix], []}}
