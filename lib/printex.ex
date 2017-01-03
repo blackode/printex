@@ -39,10 +39,10 @@ defmodule Printex do
 
 
   ### Text with foreground color                   
-  ![Prints Image](../assets/images/prints.png)             
+  ![Prints Image](assets/images/prints.png)             
 
   ### Text with background colors                 
-  ![Prints Image](../assets/images/prints_bg.png)
+  ![Prints Image](assets/images/prints_bg.png)
 
   """
 
@@ -99,7 +99,7 @@ defmodule Printex do
       iex> Printex.print_error "This is error"
 
   ### Printing Error Text
-  ![Prints Image](../assets/images/print_error.png)          
+  ![Prints Image](assets/images/print_error.png)          
   """
 
   def print_error(string) when is_binary(string) do 
@@ -120,7 +120,7 @@ defmodule Printex do
       iex> Printex.print_info "This is info"
 
   ### Printing Information Text
-  ![Prints Image](../assets/images/print_info.png)          
+  ![Prints Image](assets/images/print_info.png)          
   """
 
   def print_info(string) when is_binary(string) do 
@@ -140,7 +140,7 @@ defmodule Printex do
       iex> Printex.print_warning "This is warning"            
 
   ### Printing Info Text
-  ![Prints Image](../assets/images/print_warning.png)          
+  ![Prints Image](assets/images/print_warning.png)          
   """
   def print_warning(string) when is_binary(string) do 
     ansi_format(:yellow,string,"WARNING","warn_message")
@@ -172,7 +172,7 @@ defmodule Printex do
   prints the text in light_blue color with light_cyan background.          
 
   ### x_on_y format colors
-  ![x_on_y image](../assets/images/x_on_y.png)
+  ![x_on_y image](assets/images/x_on_y.png)
   """
   @spec color_print(binary,atom)::list
 
@@ -201,7 +201,7 @@ defmodule Printex do
   3.1 Passing label option as list. `print("hello",label: "greeting")`
 
   ### print function
-  ![print image](../assets/images/print.png)
+  ![print image](assets/images/print.png)
   """
   def print(data,label \\ :default) do 
     case label do
