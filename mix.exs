@@ -7,7 +7,7 @@ defmodule Printex.Mixfile do
      elixir: "~> 1.4-rc",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     description: "A module for checking the type and values of an argument",
+     description: "Console Printing with colors and backgrounds",
      package: package(),
      deps: deps()]
   end
@@ -39,9 +39,7 @@ defmodule Printex.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:ex_doc, github: "elixir-lang/ex_doc", override: true,only: :dev},
-     {:earmark, "~> 1.0", only: :dev}, {:dialyxir, "~> 0.3", only: [:dev]},
-     {:typex, "~> 0.1.0"}
-
+     {:earmark, "~> 1.0", only: :dev}, {:dialyxir, "~> 0.3", only: [:dev]}
    ]
   end
 end
