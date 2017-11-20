@@ -13,7 +13,7 @@ by adding `printex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:printex, "~> 0.1.0"}]
+  [{:printex, "~> 0.1.3"}]
 end
 ```
 [Documentation](https://hexdocs.pm/printex).            
