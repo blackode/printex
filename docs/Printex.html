@@ -1,52 +1,50 @@
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.14.5">
-    <title>Printex – printex v0.1.2</title>
-    <link rel="stylesheet" href="dist/app-a07cea761b.css" />
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Printex — printex v1.0.0</title>
+    <link rel="stylesheet" href="dist/html-fe10831fd0480024873d.css" />
+    <script src="dist/sidebar_items-613ee6f750.js"></script>
+    <script async src="dist/html-fe10831fd0480024873d.js"></script>
     
-    <script src="dist/sidebar_items-bb952bf796.js"></script>
   </head>
   <body data-type="modules">
-    <script>if(localStorage.getItem('night-mode')) document.body.className += ' night-mode';</script>
-
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
-<button class="sidebar-toggle">
-  <i class="icon-menu"></i>
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" title="Toggle night/day mode"></span>
 </button>
 <section class="sidebar">
 
-  
   <a href="api-reference.html" class="sidebar-projectLink">
     <div class="sidebar-projectDetails">
       <h1 class="sidebar-projectName">
-        printex
-      </h1>
+printex      </h1>
       <h2 class="sidebar-projectVersion">
-        v0.1.2
+        v1.0.0
       </h2>
     </div>
-    
   </a>
 
-  <div class="sidebar-search">
-    <i class="icon-search"></i>
-    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
-  </div>
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
 
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
 
-    
       <li><a id="modules-list" href="#full-list">Modules</a></li>
-    
 
-    
 
-    
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -58,177 +56,136 @@
 
 
       <h1>
-        <small class="visible-xs">printex v0.1.2</small>
-        Printex
-        
-        
-      </h1>
+        <small class="visible-xs">printex v1.0.0</small>
+Printex              </h1>
 
-      
+
         <section id="moduledoc">
-          <h2 id="module-documentation-for-printex" class="section-heading">
-  <a href="#module-documentation-for-printex" class="hover-link"><i class="icon-link"></i></a>
-  Documentation for Printex. 
+<h2 id="module-documentation-for-printex" class="section-heading">
+  <a href="#module-documentation-for-printex" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Documentation for Printex
 </h2>
 
-<p>Printex is a Color Printer Module,helps you to print the data and strings in color format in console.</p>
-<h2 id="module-use" class="section-heading">
-  <a href="#module-use" class="hover-link"><i class="icon-link"></i></a>
-  Use
+<p>Printex helps you to print the data and strings in color text and color backgrounds. It make use of the <a href="https://hexdocs.pm/elixir/IO.ANSI.html"><code class="inline">IO.ANSI</code></a> Module.</p>
+<h2 id="module-why-printex" class="section-heading">
+  <a href="#module-why-printex" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Why Printex ?
 </h2>
 
-<p>This module separates the different console outputs with different colors and including background colors as well.        
-It gives you the direct focus on the console by highlighting text with colors and backgrounds.           </p>
-<p>You can use in multiple ways like printing the :error message and many formats.
-This helps you identify message from the regular out put of the console. 
-You can also specify the :bg_color - Background color for the text to lay on.
-For more examples and screen shots and how to usage check the <a href="https://github.com/blackode/printex">github</a>              </p>
-<h3>NOTE</h3>
-<p>Color may look  different in different Terminals or Consoles or whatever the :stdout       </p>
+<p>This module prints the different console outputs with different colors and background colors as well.        </p>
+<h2 id="module-idea" class="section-heading">
+  <a href="#module-idea" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Idea
+</h2>
 
+<p>We can see a lot of lines with regular text in your console at the time of development. It will be hard to identify any of your <code class="inline">IO.inspect</code> statements output in your console. I thought, it would be nice to highlight our <code class="inline">inspect</code> statements outputs to distinguish from the regular lines already present in the console.       </p>
+<p>It gives you the direct focus on the console by highlighting text with colors and backgrounds.           </p>
+<p>You can use this in multiple ways like printing the <code class="inline">:error</code> message and many formats as well.
+This helps you to identify the message from the regular out put of the console. 
+You can also specify the <code class="inline">:bg_color</code> - Background color for the text to lay on.              </p>
+<p>For more examples and screen shots and how to usage check the <a href="https://github.com/blackode/printex">github</a>              </p>
+<h3 id="module-note" class="section-heading">
+  <a href="#module-note" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  NOTE
+</h3>
+
+<blockquote><p>Colors may vary from terminal to terminal...       </p>
+</blockquote>
         </section>
-      
 
-      
         <section id="summary" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#summary">
-              <i class="icon-link"></i>
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
             </a>
             Summary
           </h1>
-          
-
-          
   <div class="summary-functions summary">
     <h2>
       <a href="#functions">Functions</a>
     </h2>
-    <div class="summary-row">
+<div class="summary-row">
   <div class="summary-signature">
     <a href="#color_print/2">color_print(string, format)</a>
   </div>
-  
     <div class="summary-synopsis"><p>This prints the given text in the format you specified. The string formats are 
 as follows
 :x_on_y here {x,y} can be any 8 possible colors</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#print/2">print(data, label \\ :default)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Prints the given data with the label provided.If the label is not provided
 label data is used. How ever you can say not to use the label by passing <code class="inline">:no_label</code>
 option</p>
-<h2>Examples</h2>
-<pre><code class="elixir">print(&quot;print with out label&quot;,:no_label)
-print(&quot;Normal Print&quot;)
-print([1,2,3])</code></pre>
-<h2>Usage</h2>
-<p>You can use this function in three different ways.</p>
-<ol>
-<li>Using the default label format.<code class="inline">print(&quot;hello&quot;)</code>
-</li>
-<li>With out any label text. <code class="inline">print(&quot;hello&quot;,:no_label)</code>
-</li>
-<li>Passing label option as string. <code class="inline">print(&quot;hello&quot;,&quot;greeting&quot;)</code> here the text greeting is treated as :label
-3.1 Passing label option as list. <code class="inline">print(&quot;hello&quot;,label: &quot;greeting&quot;)</code>
-</li>
-</ol>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#print_error/1">print_error(string)</a>
   </div>
-  
-    <div class="summary-synopsis"><p>Prints the given message in the error format in the red color</p>
+    <div class="summary-synopsis"><p>Prints the given message in the error format. It uses <code class="inline">:red</code> as a foreground text color</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#print_info/1">print_info(string)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Prints the given message in the information format in the green color</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#print_warning/1">print_warning(string)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Prints the given message in the warning format in the yellow color</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#prints/1">prints(arg1)</a>
   </div>
-  
-    <div class="summary-synopsis"><p>Prints the only binary to the console with colors specified
-This function prints the string passed in the color you specified or else it uses 
-the default format for printing i.e regular format IO.puts</p>
+    <div class="summary-synopsis"><p>This function puts the <code class="inline">string</code> accordingly to the given params. The first argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be print, and the third parameter is the<br>background color used for printing the <code class="inline">string</code>. However, passing colors are optional</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#prints/2">prints(string, color \\ :white)</a>
   </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#prints/3">prints(string, color, bg_color)</a>
   </div>
-  
 </div>
-
   </div>
-
-
-          
-
         </section>
-      
 
-      
-
-      
         <section id="functions" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#functions">
-              <i class="icon-link"></i>
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
             </a>
-            Functions
-          </h1>
-          <div class="detail" id="color_print/2">
-  
-  <div class="detail-header">
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="color_print/2">
+    <div class="detail-header">
     <a href="#color_print/2" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">color_print(string, format)</span>
-    
-    
-    
+    <h1 class="signature">color_print(string, format)</span>
+        
       <div class="specs">
-        
-          <pre>color_print(binary, atom) :: list</pre>
-        
+          <pre>color_print(<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()</pre>
       </div>
-    
   </div>
   <section class="docstring">
-    <p>This prints the given text in the format you specified. The string formats are 
+<p>This prints the given text in the format you specified. The string formats are 
 as follows
 :x_on_y here {x,y} can be any 8 possible colors</p>
 <ol>
@@ -251,45 +208,43 @@ as follows
 </ol>
 <p>In addition you can also specify respective light combination of colors</p>
 <h2 id="color_print/2-usage" class="section-heading">
-  <a href="#color_print/2-usage" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#color_print/2-usage" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Usage
 </h2>
 
-<p><code class="inline">:black_on_white</code><br/>prints the text in black color with white background.            
-<code class="inline">:red_on_light_green</code><br/>prints the text in red color with light_green background.           
-<code class="inline">:light_blue_on_light_cyan</code><br/>prints the text in light_blue color with light_cyan background.          </p>
-<h3>x_on_y format colors</h3>
-<p><img src="assets/images/x_on_y.png" alt="x_on_y image"/></p>
+<p><code class="inline">:black_on_white</code><br>prints the text in black color with white background.<br><code class="inline">:red_on_light_green</code><br>prints the text in red color with light_green background.<br><code class="inline">:light_blue_on_light_cyan</code><br>prints the text in light_blue color with light_cyan background.          </p>
+<h3 id="color_print/2-x_on_y-format-colors" class="section-heading">
+  <a href="#color_print/2-x_on_y-format-colors" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  x_on_y format colors
+</h3>
 
+<p><img src="assets/images/x_on_y.png" alt="x_on_y image"/></p>
   </section>
-</div>
-<div class="detail" id="print/2">
+</section>
+<section class="detail" id="print/2">
   
-    <span id="print/1" />
-  
+    <span id="print/1"></span>
   <div class="detail-header">
     <a href="#print/2" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">print(data, label \\ :default)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">print(data, label \\ :default)</span>
+          </div>
   <section class="docstring">
-    <p>Prints the given data with the label provided.If the label is not provided
+<p>Prints the given data with the label provided.If the label is not provided
 label data is used. How ever you can say not to use the label by passing <code class="inline">:no_label</code>
 option</p>
 <h2 id="print/2-examples" class="section-heading">
-  <a href="#print/2-examples" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#print/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="elixir">print(&quot;print with out label&quot;,:no_label)
-print(&quot;Normal Print&quot;)
-print([1,2,3])</code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="n">print</span><span class="p" data-group-id="1038486988-1">(</span><span class="s">&quot;print with out label&quot;</span><span class="p">,</span><span class="ss">:no_label</span><span class="p" data-group-id="1038486988-1">)</span><span class="w">
+</span><span class="n">print</span><span class="p" data-group-id="1038486988-2">(</span><span class="s">&quot;Normal Print&quot;</span><span class="p" data-group-id="1038486988-2">)</span><span class="w">
+</span><span class="n">print</span><span class="p" data-group-id="1038486988-3">(</span><span class="p" data-group-id="1038486988-4">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="1038486988-4">]</span><span class="p" data-group-id="1038486988-3">)</span></code></pre>
 <h2 id="print/2-usage" class="section-heading">
-  <a href="#print/2-usage" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#print/2-usage" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Usage
 </h2>
 
@@ -303,175 +258,175 @@ print([1,2,3])</code></pre>
 3.1 Passing label option as list. <code class="inline">print(&quot;hello&quot;,label: &quot;greeting&quot;)</code>
 </li>
 </ol>
-<h3>print function</h3>
+<h3 id="print/2-print-function" class="section-heading">
+  <a href="#print/2-print-function" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  print function
+</h3>
+
 <p><img src="assets/images/print.png" alt="print image"/></p>
-
   </section>
-</div>
-<div class="detail" id="print_error/1">
-  
-  <div class="detail-header">
+</section>
+<section class="detail" id="print_error/1">
+    <div class="detail-header">
     <a href="#print_error/1" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">print_error(string)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">print_error(string)</span>
+          </div>
   <section class="docstring">
-    <p>Prints the given message in the error format in the red color.        </p>
+<p>Prints the given message in the error format. It uses <code class="inline">:red</code> as a foreground text color.        </p>
 <h2 id="print_error/1-examples" class="section-heading">
-  <a href="#print_error/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#print_error/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="iex elixir">iex&gt; Printex.print_error &quot;This is error&quot;</code></pre>
-<h3>Printing Error Text</h3>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print_error</span><span class="w"> </span><span class="s">&quot;This is error&quot;</span></code></pre>
+<h3 id="print_error/1-printing-error-text" class="section-heading">
+  <a href="#print_error/1-printing-error-text" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Printing Error Text
+</h3>
+
 <p><img src="assets/images/print_error.png" alt="Prints Image"/>          </p>
-
   </section>
-</div>
-<div class="detail" id="print_info/1">
-  
-  <div class="detail-header">
+</section>
+<section class="detail" id="print_info/1">
+    <div class="detail-header">
     <a href="#print_info/1" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">print_info(string)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">print_info(string)</span>
+          </div>
   <section class="docstring">
-    <p>Prints the given message in the information format in the green color.           </p>
+<p>Prints the given message in the information format in the green color.           </p>
 <h2 id="print_info/1-examples" class="section-heading">
-  <a href="#print_info/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#print_info/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="iex elixir">iex&gt; Printex.print_info &quot;This is info&quot;</code></pre>
-<h3>Printing Information Text</h3>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print_info</span><span class="w"> </span><span class="s">&quot;This is info&quot;</span></code></pre>
+<h3 id="print_info/1-printing-information-text" class="section-heading">
+  <a href="#print_info/1-printing-information-text" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Printing Information Text
+</h3>
+
 <p><img src="assets/images/print_info.png" alt="Prints Image"/>          </p>
-
   </section>
-</div>
-<div class="detail" id="print_warning/1">
-  
-  <div class="detail-header">
+</section>
+<section class="detail" id="print_warning/1">
+    <div class="detail-header">
     <a href="#print_warning/1" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">print_warning(string)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">print_warning(string)</span>
+          </div>
   <section class="docstring">
-    <p>Prints the given message in the warning format in the yellow color.       </p>
+<p>Prints the given message in the warning format in the yellow color.       </p>
 <h2 id="print_warning/1-examples" class="section-heading">
-  <a href="#print_warning/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#print_warning/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="iex elixir">iex&gt; Printex.print_warning &quot;This is warning&quot;            </code></pre>
-<h3>Printing Info Text</h3>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print_warning</span><span class="w"> </span><span class="s">&quot;This is warning&quot;</span><span class="w">            </span></code></pre>
+<h3 id="print_warning/1-printing-warning-text" class="section-heading">
+  <a href="#print_warning/1-printing-warning-text" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Printing Warning Text
+</h3>
+
 <p><img src="assets/images/print_warning.png" alt="Prints Image"/>          </p>
-
   </section>
-</div>
-<div class="detail" id="prints/1">
-  
-  <div class="detail-header">
+</section>
+<section class="detail" id="prints/1">
+    <div class="detail-header">
     <a href="#prints/1" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">prints(arg1)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">prints(arg1)</span>
+          </div>
   <section class="docstring">
-    <p>Prints the only binary to the console with colors specified
-This function prints the string passed in the color you specified or else it uses 
-the default format for printing i.e regular format IO.puts</p>
+<p>This function puts the <code class="inline">string</code> accordingly to the given params. The first argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be print, and the third parameter is the<br>background color used for printing the <code class="inline">string</code>. However, passing colors are optional.         </p>
+<p>The colors are to be of type <code class="inline">atom</code> and at present these <code class="inline">[:black,:blue,:cyan,:green,:magenta,:red,:white,:yellow]</code>  are supported.
+However, it is optional.    </p>
+<p>If the no parameter is passed then default format for printing i.e regular format <code class="inline">IO.puts</code> is used.</p>
 <h2 id="prints/1-examples" class="section-heading">
-  <a href="#prints/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  <a href="#prints/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="iex elixir">iex&gt; Printex.prints(&quot;message&quot;)
-This prints the message in default color
-iex&gt; Printex.prints(&quot;message&quot;,:red)
-This prints the message in red color
-iex&gt; Printex.prints {&quot;message&quot;,:red}
-This prints the message in  red color
-iex&gt; Printex.prints (%{string: &quot;message&quot;,color: :red})
-This prints the message in  red color
-iex&gt; Printex.prints (&quot;message&quot;,:red,:white)
-This prints the message in red color with white background          </code></pre>
-<h3>Text with foreground color</h3>
-<p><img src="assets/images/prints.png" alt="Prints Image"/>             </p>
-<h3>Text with background colors</h3>
-<p><img src="assets/images/prints_bg.png" alt="Prints Image"/></p>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="2660716064-1">(</span><span class="s">&quot;message&quot;</span><span class="p" data-group-id="2660716064-1">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="err">`</span><span class="n">white</span><span class="err">`</span><span class="w">
 
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="2660716064-2">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="2660716064-2">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2660716064-3">{</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="2660716064-3">}</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w">  </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2660716064-4">(</span><span class="p" data-group-id="2660716064-5">%{</span><span class="ss">string</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">color</span><span class="p">:</span><span class="w"> </span><span class="ss">:red</span><span class="p" data-group-id="2660716064-5">}</span><span class="p" data-group-id="2660716064-4">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w">  </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2660716064-6">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:red</span><span class="p">,</span><span class="ss">:white</span><span class="p" data-group-id="2660716064-6">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">white</span><span class="w"> </span><span class="n">background</span><span class="w">          </span></code></pre>
+<h3 id="prints/1-text-with-foreground-color" class="section-heading">
+  <a href="#prints/1-text-with-foreground-color" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Text with foreground color
+</h3>
+
+<p><img src="assets/images/prints.png" alt="Prints Image"/>             </p>
+<h3 id="prints/1-text-with-background-colors" class="section-heading">
+  <a href="#prints/1-text-with-background-colors" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Text with background colors
+</h3>
+
+<p><img src="assets/images/prints_bg.png" alt="Prints Image"/></p>
   </section>
-</div>
-<div class="detail" id="prints/2">
+</section>
+<section class="detail" id="prints/2">
   
-    <span id="prints/1" />
-  
+    <span id="prints/1"></span>
   <div class="detail-header">
     <a href="#prints/2" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">prints(string, color \\ :white)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">prints(string, color \\ :white)</span>
+          </div>
   <section class="docstring">
-    
   </section>
-</div>
-<div class="detail" id="prints/3">
-  
-  <div class="detail-header">
+</section>
+<section class="detail" id="prints/3">
+    <div class="detail-header">
     <a href="#prints/3" class="detail-link" title="Link to this function">
-      <i class="icon-link"></i>
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">prints(string, color, bg_color)</span>
-    
-    
-    
-  </div>
+    <h1 class="signature">prints(string, color, bg_color)</span>
+          </div>
   <section class="docstring">
-    
   </section>
-</div>
-
+</section>
+          </div>
         </section>
-      
-
-      
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.14.5),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
           </span>
           <span class="line">
             designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
             </span>
         </p>
-        <button class="night-mode-toggle" />
       </footer>
     </div>
   </div>
 </section>
 </div>
-  <script src="dist/app-4aef34ad5f.js"></script>
+  
   </body>
 </html>
 
