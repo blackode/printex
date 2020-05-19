@@ -1,6 +1,9 @@
 # Printex
 Printex is a Color Printer Module,helps you to print the data and strings in color format in console.                     
 
+## Version Changelog
+**v1.1.0**   [Changelog](CHANGELOG.md)
+
 ## Use
 This module separates the different console outputs with different colors and including background colors as well. It gives you the direct focus on the console by highlighting text with colors and backgrounds.                             
 
