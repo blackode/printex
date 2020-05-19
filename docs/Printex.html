@@ -5,15 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.3">
-    <title>Printex — printex v1.0.0</title>
+    <title>Printex — printex v1.1.0</title>
     <link rel="stylesheet" href="dist/html-fe10831fd0480024873d.css" />
-    <script src="dist/sidebar_items-613ee6f750.js"></script>
+    <script src="dist/sidebar_items-7e167b1426.js"></script>
     <script async src="dist/html-fe10831fd0480024873d.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
@@ -27,7 +26,7 @@
       <h1 class="sidebar-projectName">
 printex      </h1>
       <h2 class="sidebar-projectVersion">
-        v1.0.0
+        v1.1.0
       </h2>
     </div>
   </a>
@@ -54,10 +53,9 @@ printex      </h1>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
-        <small class="visible-xs">printex v1.0.0</small>
-Printex              </h1>
+        <small class="visible-xs">printex v1.1.0</small>
+Printex      </h1>
 
 
         <section id="moduledoc">
@@ -66,24 +64,33 @@ Printex              </h1>
   Documentation for Printex
 </h2>
 
-<p>Printex helps you to print the data and strings in color text and color backgrounds. It make use of the <a href="https://hexdocs.pm/elixir/IO.ANSI.html"><code class="inline">IO.ANSI</code></a> Module.</p>
+<p>Printex helps you to print the data and strings in color text and color 
+backgrounds. It make use of the <a href="https://hexdocs.pm/elixir/IO.ANSI.html"><code class="inline">IO.ANSI</code></a> Module.</p>
 <h2 id="module-why-printex" class="section-heading">
   <a href="#module-why-printex" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Why Printex ?
 </h2>
 
-<p>This module prints the different console outputs with different colors and background colors as well.        </p>
+<p>This module prints the different console outputs with different colors and 
+background colors as well.        </p>
 <h2 id="module-idea" class="section-heading">
   <a href="#module-idea" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Idea
 </h2>
 
-<p>We can see a lot of lines with regular text in your console at the time of development. It will be hard to identify any of your <code class="inline">IO.inspect</code> statements output in your console. I thought, it would be nice to highlight our <code class="inline">inspect</code> statements outputs to distinguish from the regular lines already present in the console.       </p>
-<p>It gives you the direct focus on the console by highlighting text with colors and backgrounds.           </p>
-<p>You can use this in multiple ways like printing the <code class="inline">:error</code> message and many formats as well.
-This helps you to identify the message from the regular out put of the console. 
+<p>We can see a lot of lines with regular text in your console at the time of 
+development. It will be hard to identify any of your <code class="inline">IO.inspect</code> statements 
+output in your console. I thought, it would be nice to highlight our <code class="inline">inspect</code> 
+statements outputs to distinguish from the regular lines already present 
+in the console.       </p>
+<p>It gives you the direct focus on the console by highlighting text with 
+colors and backgrounds.           </p>
+<p>You can use this in multiple ways like printing the <code class="inline">:error</code> message and 
+many formats as well.</p>
+<p>This helps you to identify the message from the regular out put of the console. 
 You can also specify the <code class="inline">:bg_color</code> - Background color for the text to lay on.              </p>
-<p>For more examples and screen shots and how to usage check the <a href="https://github.com/blackode/printex">github</a>              </p>
+<p>For more examples and screen shots and how to usage 
+check the <a href="https://github.com/blackode/printex">github</a>              </p>
 <h3 id="module-note" class="section-heading">
   <a href="#module-note" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   NOTE
@@ -139,6 +146,20 @@ option</p>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#print_list/2">print_list(list, count_label \\ :all)</a>
+  </div>
+    <div class="summary-synopsis"><p>This helps to print the list with number of units we need</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#print_map/2">print_map(map, options \\ [])</a>
+  </div>
+    <div class="summary-synopsis"><p>This function helps to print a map with optons</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#print_warning/1">print_warning(string)</a>
   </div>
     <div class="summary-synopsis"><p>Prints the given message in the warning format in the yellow color</p>
@@ -148,12 +169,15 @@ option</p>
   <div class="summary-signature">
     <a href="#prints/1">prints(arg1)</a>
   </div>
-    <div class="summary-synopsis"><p>This function puts the <code class="inline">string</code> accordingly to the given params. The first argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be print, and the third parameter is the<br>background color used for printing the <code class="inline">string</code>. However, passing colors are optional</p>
+    <div class="summary-synopsis"><p>This function puts the <code class="inline">string</code> accordingly to the given params. The first 
+argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be 
+print, and the third parameter is the background color used for printing the 
+<code class="inline">string</code>. However, passing colors are optional</p>
 </div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#prints/2">prints(string, color \\ :white)</a>
+    <a href="#prints/2">prints(string, color \\ :yellow)</a>
   </div>
 </div>
 <div class="summary-row">
@@ -173,13 +197,12 @@ option</p>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="color_print/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#color_print/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">color_print(string, format)</span>
-        
       <div class="specs">
           <pre>color_print(<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()</pre>
       </div>
@@ -212,7 +235,8 @@ as follows
   Usage
 </h2>
 
-<p><code class="inline">:black_on_white</code><br>prints the text in black color with white background.<br><code class="inline">:red_on_light_green</code><br>prints the text in red color with light_green background.<br><code class="inline">:light_blue_on_light_cyan</code><br>prints the text in light_blue color with light_cyan background.          </p>
+<p><code class="inline">:black_on_white</code><br>prints the text in black color with white background.<br><code class="inline">:red_on_light_green</code>          white
+prints the text in red color with light_green background.<br><code class="inline">:light_blue_on_light_cyan</code><br>prints the text in light_blue color with light_cyan background.          </p>
 <h3 id="color_print/2-x_on_y-format-colors" class="section-heading">
   <a href="#color_print/2-x_on_y-format-colors" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   x_on_y format colors
@@ -222,7 +246,6 @@ as follows
   </section>
 </section>
 <section class="detail" id="print/2">
-  
     <span id="print/1"></span>
   <div class="detail-header">
     <a href="#print/2" class="detail-link" title="Link to this function">
@@ -230,7 +253,7 @@ as follows
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">print(data, label \\ :default)</span>
-          </div>
+  </div>
   <section class="docstring">
 <p>Prints the given data with the label provided.If the label is not provided
 label data is used. How ever you can say not to use the label by passing <code class="inline">:no_label</code>
@@ -240,9 +263,10 @@ option</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="n">print</span><span class="p" data-group-id="8426272988-1">(</span><span class="s">&quot;print with out label&quot;</span><span class="p">,</span><span class="ss">:no_label</span><span class="p" data-group-id="8426272988-1">)</span><span class="w">
-</span><span class="n">print</span><span class="p" data-group-id="8426272988-2">(</span><span class="s">&quot;Normal Print&quot;</span><span class="p" data-group-id="8426272988-2">)</span><span class="w">
-</span><span class="n">print</span><span class="p" data-group-id="8426272988-3">(</span><span class="p" data-group-id="8426272988-4">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="8426272988-4">]</span><span class="p" data-group-id="8426272988-3">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="n">print</span><span class="p" data-group-id="1245147727-1">(</span><span class="s">&quot;print with out label&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:no_label</span><span class="p" data-group-id="1245147727-1">)</span><span class="w">
+</span><span class="n">print</span><span class="p" data-group-id="1245147727-2">(</span><span class="s">&quot;I Print with Deafault label DATA&quot;</span><span class="p" data-group-id="1245147727-2">)</span><span class="w">
+</span><span class="n">print</span><span class="p" data-group-id="1245147727-3">(</span><span class="p" data-group-id="1245147727-4">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="1245147727-4">]</span><span class="p" data-group-id="1245147727-3">)</span><span class="w">
+</span><span class="n">print</span><span class="p" data-group-id="1245147727-5">(</span><span class="s">&quot;I print with Label&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Your Label Here&quot;</span><span class="p" data-group-id="1245147727-5">)</span></code></pre>
 <h2 id="print/2-usage" class="section-heading">
   <a href="#print/2-usage" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Usage
@@ -254,8 +278,9 @@ option</p>
 </li>
 <li>With out any label text. <code class="inline">print(&quot;hello&quot;,:no_label)</code>
 </li>
-<li>Passing label option as string. <code class="inline">print(&quot;hello&quot;,&quot;greeting&quot;)</code> here the text greeting is treated as :label
-3.1 Passing label option as list. <code class="inline">print(&quot;hello&quot;,label: &quot;greeting&quot;)</code>
+<li>Passing label option as string. <code class="inline">print(&quot;hello&quot;,&quot;greeting&quot;)</code>
+   here the text greeting is treated as :label
+   3.1 Passing label option as list. <code class="inline">print(&quot;hello&quot;,label: &quot;greeting&quot;)</code>
 </li>
 </ol>
 <h3 id="print/2-print-function" class="section-heading">
@@ -267,13 +292,13 @@ option</p>
   </section>
 </section>
 <section class="detail" id="print_error/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#print_error/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">print_error(string)</span>
-          </div>
+  </div>
   <section class="docstring">
 <p>Prints the given message in the error format. It uses <code class="inline">:red</code> as a foreground text color.        </p>
 <h2 id="print_error/1-examples" class="section-heading">
@@ -291,13 +316,13 @@ option</p>
   </section>
 </section>
 <section class="detail" id="print_info/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#print_info/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">print_info(string)</span>
-          </div>
+  </div>
   <section class="docstring">
 <p>Prints the given message in the information format in the green color.           </p>
 <h2 id="print_info/1-examples" class="section-heading">
@@ -314,14 +339,130 @@ option</p>
 <p><img src="assets/images/print_info.png" alt="Prints Image"/>          </p>
   </section>
 </section>
+<section class="detail" id="print_list/2">
+    <span id="print_list/1"></span>
+  <div class="detail-header">
+    <a href="#print_list/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">print_list(list, count_label \\ :all)</span>
+  </div>
+  <section class="docstring">
+<p>This helps to print the list with number of units we need.</p>
+<p>We can pass specific style text like in the following way</p>
+<ul>
+<li><code class="inline">first_&lt;num&gt;</code> ex <code class="inline">first_3</code> to print the first 3 elements in a list given.
+</li>
+<li><code class="inline">last_&lt;num&gt;</code> ex <code class="inline">last_5</code> to print the last 5 elements in a list provided
+</li>
+<li><code class="inline">first_&lt;num&gt;_last_&lt;num&gt;</code> ex <code class="inline">first_3_last_5</code> to print the first 3 elements 
+   and last 5 elements in a list
+</li>
+</ul>
+<p>You can also pass just an integer like <code class="inline">3</code>  and <code class="inline">-3</code> the <code class="inline">-</code> specifies the 
+direction for printing of elements in a list.</p>
+<h2 id="print_list/2-examples" class="section-heading">
+  <a href="#print_list/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sx">~w(1 2 3 4 5 6 7 8 9 10)</span><span class="w">
+</span><span class="p" data-group-id="6322619868-1">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;5&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;6&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p" data-group-id="6322619868-1">]</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-2">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;5&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;6&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p" data-group-id="6322619868-2">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="ss">:first_3</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-3">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p" data-group-id="6322619868-3">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="ss">:last_5</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-4">[</span><span class="s">&quot;6&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p" data-group-id="6322619868-4">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="ss">:first_2_last_3</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-5">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p" data-group-id="6322619868-5">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">5</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-6">[</span><span class="s">&quot;6&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;9&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p" data-group-id="6322619868-6">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">print_list</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">BEGIN</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">-</span><span class="w">
+</span><span class="p" data-group-id="6322619868-7">[</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p" data-group-id="6322619868-7">]</span><span class="w">
+</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="w"> </span><span class="nc">DATA</span><span class="w"> </span><span class="nc">ENDS</span><span class="w"> </span><span class="o">--</span><span class="o">--</span><span class="o">--</span><span class="o">--</span></code></pre>
+<h3 id="print_list/2-print_list-function" class="section-heading">
+  <a href="#print_list/2-print_list-function" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  print_list function
+</h3>
+
+<p><img src="assets/images/print_list.png" alt="print image"/></p>
+  </section>
+</section>
+<section class="detail" id="print_map/2">
+    <span id="print_map/1"></span>
+  <div class="detail-header">
+    <a href="#print_map/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">print_map(map, options \\ [])</span>
+  </div>
+  <section class="docstring">
+<p>This function helps to print a map with optons.</p>
+<p>You an either print whole map or specific keys  in a map.</p>
+<p>The options here is a <a href="https://hexdocs.pm/elixir/Keyword.html"><code class="inline">Keyword</code></a> with following keys</p>
+<h2 id="print_map/2-options" class="section-heading">
+  <a href="#print_map/2-options" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Options
+</h2>
+
+<ul>
+<li><code class="inline">keys</code> - list of keys to be print
+</li>
+<li><code class="inline">label</code> - A string label for the display
+</li>
+<li><code class="inline">isolate</code> - It is default <code class="inline">false</code> and if you pass as <code class="inline">true</code>, each key gets 
+   printed
+</li>
+</ul>
+<h2 id="print_map/2-examples" class="section-heading">
+  <a href="#print_map/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print</span><span class="p" data-group-id="7001601449-1">(</span><span class="n">map</span><span class="p" data-group-id="7001601449-1">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">whole</span><span class="w"> </span><span class="n">map</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print_map</span><span class="p" data-group-id="7001601449-2">(</span><span class="p" data-group-id="7001601449-3">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;hell&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p" data-group-id="7001601449-3">}</span><span class="p">,</span><span class="w"> </span><span class="ss">keys</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7001601449-4">[</span><span class="ss">:name</span><span class="p" data-group-id="7001601449-4">]</span><span class="p" data-group-id="7001601449-2">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">just</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">name</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">print_map</span><span class="p" data-group-id="7001601449-5">(</span><span class="p" data-group-id="7001601449-6">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;hell&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p" data-group-id="7001601449-6">}</span><span class="p">,</span><span class="w"> </span><span class="ss">isolate</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p" data-group-id="7001601449-5">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">map</span><span class="w"> </span><span class="n">separately</span></code></pre>
+<h3 id="print_map/2-print_map-function" class="section-heading">
+  <a href="#print_map/2-print_map-function" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  print_map function
+</h3>
+
+<p><img src="assets/images/print_map.png" alt="print image"/></p>
+  </section>
+</section>
 <section class="detail" id="print_warning/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#print_warning/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">print_warning(string)</span>
-          </div>
+  </div>
   <section class="docstring">
 <p>Prints the given message in the warning format in the yellow color.       </p>
 <h2 id="print_warning/1-examples" class="section-heading">
@@ -339,36 +480,41 @@ option</p>
   </section>
 </section>
 <section class="detail" id="prints/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#prints/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">prints(arg1)</span>
-          </div>
+  </div>
   <section class="docstring">
-<p>This function puts the <code class="inline">string</code> accordingly to the given params. The first argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be print, and the third parameter is the<br>background color used for printing the <code class="inline">string</code>. However, passing colors are optional.         </p>
-<p>The colors are to be of type <code class="inline">atom</code> and at present these <code class="inline">[:black,:blue,:cyan,:green,:magenta,:red,:white,:yellow]</code>  are supported.
-However, it is optional.    </p>
-<p>If the no parameter is passed then default format for printing i.e regular format <code class="inline">IO.puts</code> is used.</p>
+<p>This function puts the <code class="inline">string</code> accordingly to the given params. The first 
+argument should be the <code class="inline">binary</code>.<br>The second parameter is the foreground color that you what the string to be 
+print, and the third parameter is the background color used for printing the 
+<code class="inline">string</code>. However, passing colors are optional.</p>
+<p>The colors are to be of type <code class="inline">atom</code> and at present the following colors have
+been supported</p>
+<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="7192170210-1">[</span><span class="ss">:black</span><span class="p">,</span><span class="ss">:blue</span><span class="p">,</span><span class="ss">:cyan</span><span class="p">,</span><span class="ss">:green</span><span class="p">,</span><span class="ss">:magenta</span><span class="p">,</span><span class="ss">:red</span><span class="p">,</span><span class="ss">:white</span><span class="p">,</span><span class="ss">:yellow</span><span class="p" data-group-id="7192170210-1">]</span><span class="err">`</span></code></pre>
+<p>However, it is optional to pass the color. By default it uses <code class="inline">yellow</code> 
+background with <code class="inline">black</code> foreground</p>
 <h2 id="prints/1-examples" class="section-heading">
   <a href="#prints/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="3235924525-1">(</span><span class="s">&quot;message&quot;</span><span class="p" data-group-id="3235924525-1">)</span><span class="w">
-</span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="err">`</span><span class="n">white</span><span class="err">`</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="2215557109-1">(</span><span class="s">&quot;message&quot;</span><span class="p" data-group-id="2215557109-1">)</span><span class="w">
+</span><span class="nc">This</span><span class="w"> </span><span class="nc">FG</span><span class="w"> </span><span class="nc">Color</span><span class="w"> </span><span class="err">`</span><span class="n">yellow</span><span class="err">`</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nc">BG</span><span class="w"> </span><span class="nc">Color</span><span class="w"> </span><span class="sc">&#39;black&#39;</span><span class="p">,</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="3235924525-2">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="3235924525-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="p" data-group-id="2215557109-2">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="2215557109-2">)</span><span class="w">
 </span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="3235924525-3">{</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="3235924525-3">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2215557109-3">{</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">:red</span><span class="p" data-group-id="2215557109-3">}</span><span class="w">
 </span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w">  </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="3235924525-4">(</span><span class="p" data-group-id="3235924525-5">%{</span><span class="ss">string</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">color</span><span class="p">:</span><span class="w"> </span><span class="ss">:red</span><span class="p" data-group-id="3235924525-5">}</span><span class="p" data-group-id="3235924525-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2215557109-4">(</span><span class="p" data-group-id="2215557109-5">%{</span><span class="ss">string</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="ss">color</span><span class="p">:</span><span class="w"> </span><span class="ss">:red</span><span class="p" data-group-id="2215557109-5">}</span><span class="p" data-group-id="2215557109-4">)</span><span class="w">
 </span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w">  </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="3235924525-6">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:red</span><span class="p">,</span><span class="ss">:white</span><span class="p" data-group-id="3235924525-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Printex</span><span class="o">.</span><span class="n">prints</span><span class="w"> </span><span class="p" data-group-id="2215557109-6">(</span><span class="s">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:red</span><span class="p">,</span><span class="ss">:white</span><span class="p" data-group-id="2215557109-6">)</span><span class="w">
 </span><span class="nc">This</span><span class="w"> </span><span class="n">prints</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">white</span><span class="w"> </span><span class="n">background</span><span class="w">          </span></code></pre>
 <h3 id="prints/1-text-with-foreground-color" class="section-heading">
   <a href="#prints/1-text-with-foreground-color" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
@@ -385,32 +531,31 @@ However, it is optional.    </p>
   </section>
 </section>
 <section class="detail" id="prints/2">
-  
     <span id="prints/1"></span>
   <div class="detail-header">
     <a href="#prints/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">prints(string, color \\ :white)</span>
-          </div>
+    <h1 class="signature">prints(string, color \\ :yellow)</span>
+  </div>
   <section class="docstring">
   </section>
 </section>
 <section class="detail" id="prints/3">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#prints/3" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">prints(string, color, bg_color)</span>
-          </div>
+  </div>
   <section class="docstring">
   </section>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -426,7 +571,5 @@ However, it is optional.    </p>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-
