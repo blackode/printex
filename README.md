@@ -37,6 +37,12 @@ end
 ### Printing the Info Text
 ![print_info](assets/images/print_info.png)
 
+### Printing the map
+![print_info](assets/images/print_map.png)
+
+### Printing the map
+![print_info](assets/images/print_list.png)
+
 ### Smart printing
 
 ![color_print](assets/images/x_on_y.png)
